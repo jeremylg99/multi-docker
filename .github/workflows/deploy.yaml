@@ -20,6 +20,8 @@ jobs:
       - run: docker build -t rallycoding/multi-server ./server
       - run: docker build -t rallycoding/multi-worker ./worker
 
+# take those immages and push them to docker hub
+
       - run: docker push rallycoding/multi-client
       - run: docker push rallycoding/multi-nginx
       - run: docker push rallycoding/multi-server
